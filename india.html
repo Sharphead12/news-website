@@ -7,30 +7,41 @@
 </head>
 <body>
 
+<!-- SPLASH SCREEN -->
+<div class="splash" id="splash">
+    <img src="logo.png" alt="Site Logo">
+</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
+    }, 1000); // 1 second
+</script>
+
 <header>
     <h1>India News</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="world.html">World</a>
     <a href="india.html">India</a>
+    <a href="world.html">World</a>
     <a href="business.html">Business</a>
     <a href="sports.html">Sports</a>
     <a href="technology.html">Technology</a>
     <a href="entertainment.html">Entertainment</a>
 </nav>
 
-<div class="container">
-    <div class="article">
-        <h3>India Headline 1</h3>
-        <p>Details about this Indian news...</p>
-    </div>
-</div>
+<div class="container" id="news-container"></div>
 
 <footer>
-    &copy; 2026 News Today
+    © 2026 The Hindu Clone
 </footer>
+
+<script src="news.js"></script>
+<script>
+    loadNews("india");
+</script>
 
 </body>
 </html>

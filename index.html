@@ -2,50 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>News Today - Home</title>
+    <title>The Hindu Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- SPLASH SCREEN -->
+<div class="splash" id="splash">
+    <img src="logo.png" alt="Site Logo">
+</div>
 
+<script>
+    setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
+    }, 1000); // 1 second
+</script>
+
+<!-- FULL SCREEN LOGO -->
+<section class="fullscreen-logo">
+    <img src="logo.png" alt="The Hindu Logo">
+</section>
+
+<!-- MAIN CONTENT -->
 <header>
-    <h1>News Today</h1>
-    <p>Latest headlines from around the world</p>
+    <p>Latest Headlines</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="world.html">World</a>
     <a href="india.html">India</a>
+    <a href="world.html">World</a>
     <a href="business.html">Business</a>
     <a href="sports.html">Sports</a>
     <a href="technology.html">Technology</a>
     <a href="entertainment.html">Entertainment</a>
 </nav>
 
-<div class="container">
-
-    <h2>Top Headlines</h2>
-
-    <div class="article">
-        <h3>Headline 1</h3>
-        <p>Short summary of the news article goes here...</p>
-    </div>
-
-    <div class="article">
-        <h3>Headline 2</h3>
-        <p>Short summary of the news article goes here...</p>
-    </div>
-
-    <div class="article">
-        <h3>Headline 3</h3>
-        <p>Short summary of the news article goes here...</p>
-    </div>
-
-</div>
+<div class="container" id="news-container"></div>
 
 <footer>
-    &copy; 2026 News Today
+    © 2026 The Hindu Clone
 </footer>
+
+<script src="news.js"></script>
+<script>
+    loadNews("home");
+</script>
 
 </body>
 </html>
