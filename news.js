@@ -1,7 +1,7 @@
 const newsData = {
     home: [
         {
-            title: "Government Announces New Education Policy",
+            title: "ai summit in India 
             description: "The policy focuses on digital education and skill development.",
             date: "22 Feb 2026"
         },
