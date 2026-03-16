@@ -15,7 +15,7 @@
 <script>
     setTimeout(() => {
         document.getElementById("splash").style.display = "none";
-    }, 1000); // 1 second
+    }, 1000);
 </script>
 
 <header>
@@ -24,24 +24,31 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="world.html">World</a>
     <a href="india.html">India</a>
+    <a href="world.html">World</a>
     <a href="business.html">Business</a>
     <a href="sports.html">Sports</a>
     <a href="technology.html">Technology</a>
     <a href="entertainment.html">Entertainment</a>
 </nav>
 
-<div class="container">
-    <div class="article">
-        <h3>Business Headline 1</h3>
-        <p>Details about a business news article...</p>
-    </div>
-</div>
+<!-- IMPORTANT: Dynamic News Container -->
+<div class="container" id="news-container"></div>
 
 <footer>
-    &copy; 2026 News Today
+    © 2026 The Hindu All Rights Reserved. |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
 </footer>
+
+<!-- NEWS JS -->
+<script src="news.js"></script>
+
+<script>
+    window.onload = function () {
+        loadNews("business");
+    }
+</script>
 
 </body>
 </html>
